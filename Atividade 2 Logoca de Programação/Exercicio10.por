@@ -3,10 +3,8 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia pedido
-		inteiro numPedido=0
-		real valorPedido = 0
-		real total = 0
+		inteiro numPedido=0, quantidade = 0
+		real valorPedido = 0, total = 0
 		
 
 		escreva("----------------\n")
@@ -23,53 +21,61 @@ programa
 		escreva("Hamburguer    ||   104  ||  1,20\n")
 		escreva("CheseBurguer  ||   105  ||  1,30\n")
 		escreva("Refrigerante  ||   106  ||  1,00\n")
+		escreva("   Sair       ||   107  ||   =) \n")
 		
 		enquanto (numPedido != 107) {
 			
 			escreva("Qual seu pedido: \n")
-			escreva("Caso queira sair digite 107 =): ")
 			leia(numPedido)
-			limpa()
+			
+			escreva("Qual a Quantidade: ")
+			leia(quantidade)
+
+			se (numPedido < 101 ou numPedido > 107){
+				escreva("Numero não cadastrado, favor inserir valor valido \n")
+			}
 			
 		escolha (numPedido) {
 	
 		caso 101:
-			valorPedido = valorPedido + 1.20
+			valorPedido = (valorPedido + 1.20) * quantidade 
 			pare
 
 		
 		caso 102:
-			valorPedido = valorPedido + 1.30
+			valorPedido = (valorPedido + 1.30) * quantidade
 			pare
 			
 		caso 103:
-			valorPedido = valorPedido + 1.50
+			valorPedido = (valorPedido + 1.50) * quantidade
 			pare
 			
 		caso 104:
-			valorPedido = valorPedido + 1.20
+			valorPedido = (valorPedido + 1.20) * quantidade
 			pare
 			
 		caso 105:
-			valorPedido = valorPedido + 1.30
+			valorPedido = (valorPedido + 1.30) * quantidade
 			pare
 			
 		caso 106:
-			valorPedido = valorPedido + 1.00
+			valorPedido = (valorPedido + 1.00) * quantidade
 			pare
 		
 		caso 107:
 			escreva("Obrigado !!! \n")	
 		}
 
-		total = valorPedido + total
+		total = valorPedido
 	}   
 
 	escreva("----------------------------\n")
 	escreva("Valor total a pagar: $" + total + "\n")
 	escreva("----------------------------\n")
 		
-	}    
+	}    
+}
+    
 }
 /* $$$ Portugol Studio $$$ 
  * 
