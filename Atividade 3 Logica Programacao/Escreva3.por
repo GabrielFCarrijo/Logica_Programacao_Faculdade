@@ -3,21 +3,22 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro minutos, resto, div
-		
-		escreva("---------------\n")
-		escreva("  Exercicio 9  \n")
-		escreva("---------------\n")
+		inteiro vet[10]
 
-		escreva("Quantos minutos para a conversão: ")
-		leia(minutos)
+		para(inteiro i=0; i<10; i++){
+			escreva("digite um numero: ")
+			leia(vet[i])
 
-		div = minutos / 60
-		resto = minutos % 60
+			para(inteiro x=0; x<i; x++){
+				se(vet[x] == vet[i]){
+					escreva("numero repetido, mas continue\n")
+				}
+			}
+		}
 
-		limpa()
-		
-		escreva(div + (" Hora(s) ") + resto + (" Minuto(s)"))
+		para(inteiro z=0; z<10; z++){
+			escreva(vet[z], " ")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -25,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 284; 
+ * @POSICAO-CURSOR = 250; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

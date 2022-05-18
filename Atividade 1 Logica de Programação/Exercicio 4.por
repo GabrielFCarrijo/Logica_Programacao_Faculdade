@@ -1,26 +1,31 @@
 programa
 {
-	inclua biblioteca Calendario
 	
 	funcao inicio()
 	{
-		inteiro ano_Atual, data_Nasc, calc_Ano
-
-		ano_Atual = Calendario.ano_atual()
-				
+		inteiro A,B,C
+		
+		C = 0
+		
 		escreva("-------------------------\n")
-		escreva("       Exercicio 2       ")
+		escreva("       Exercicio 4       ")
 		escreva("\n-------------------------\n\n")
 
-		escreva("Qual é o ano atual ? \n")
-		leia(ano_Atual)
+		escreva("QUal valor da variavel A: ")
+		leia(A)
+		
+		escreva("QUal valor da variavel B: ")
+		leia(B)
 
-		escreva("Qual a seu ano de nascimento ? ")
-		leia(data_Nasc)
+		C = A
+		A = B
+		B = C
 
-		calc_Ano = ano_Atual - data_Nasc
+		escreva("O valor agora é igual: \n\n")
+		escreva("o valor de A é: " , A ,"\n")
+		escreva("o valor de B é: " , B, "\n")
 
-		escreva("Você tem " + calc_Ano +" anos")
+		
 		
 	}
 }
@@ -29,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 335; 
+ * @POSICAO-CURSOR = 297; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

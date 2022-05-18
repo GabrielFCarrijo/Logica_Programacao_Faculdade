@@ -1,24 +1,27 @@
 programa
 {
+	inclua biblioteca Calendario
 	
 	funcao inicio()
 	{
-		real lado, altura, area
+		inteiro ano_Atual, data_Nasc, calc_Ano
 
+		ano_Atual = Calendario.ano_atual()
+				
 		escreva("-------------------------\n")
-		escreva("       Exercicio 1       ")
+		escreva("       Exercicio 2       ")
 		escreva("\n-------------------------\n\n")
 
-		escreva ("Informe a altura do retangulo: ")
-		leia(altura)
+		escreva("Qual é o ano atual ? \n")
+		leia(ano_Atual)
 
-		escreva ("Informe o lado do retangulo: ")
-		leia(lado)
+		escreva("Qual a seu ano de nascimento ? ")
+		leia(data_Nasc)
 
-		area = altura * lado
+		calc_Ano = ano_Atual - data_Nasc
 
-		escreva("A area do retangulo é igual a: " + area)
-
+		escreva("Você tem " + calc_Ano +" anos")
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -26,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 67; 
+ * @POSICAO-CURSOR = 335; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
